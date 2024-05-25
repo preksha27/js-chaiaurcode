@@ -21,8 +21,21 @@ console.log(typeof jsUser[mySym])
 jsUser.email= "preksha@adobe.com" // to change the value of any key
 console.log(jsUser["email"]);
 
-Object.freeze(jsUser)// this will freeze to object so that no further changes can be made
+//Object.freeze(jsUser)// this will freeze to object so that no further changes can be made
 
 jsUser.email= "preksha@microsoft.com"
 console.log(jsUser["email"]);
 console.log(jsUser);
+
+// functions used as varaibles
+
+jsUser.greetings = function(){
+console.log("hello world")
+}
+jsUser.greetings() //this is used to return a value it is a return function
+
+jsUser.greetings2 = function(){
+    console.log(`Hello JS user, ${this.name}`)//this is used to give reference for same object
+   
+}
+jsUser.greetings2()
