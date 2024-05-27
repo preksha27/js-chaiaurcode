@@ -38,10 +38,24 @@ const users = [
         email:"k@microsoft.com"
     }
 ]
-console.log(users[1].id)
-console.log(Object.keys(tinderUser))
+console.log(users[1].id)  // printout array's first element
+console.log(Object.keys(tinderUser))   // get the keys of the object
 console.log(Object.keys(users))
-console.log(Object.entries(tinderUser))
+console.log(Object.entries(tinderUser))  // get the key value pairs of the object
 
 
-console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+console.log(tinderUser.hasOwnProperty('isLoggedIn')); // tocheck if a particular keys are present in a objectc
+console.log(Object.values(users));
+
+/////object de-structuring
+
+const course = {
+    courseName :" js in hindi",
+    price :999,
+    courseInstructor :"Preksha"
+}
+const {courseInstructor}= course // to use instead of course.couseInstructor
+console.log(courseInstructor);
+// if you want to rename any keys then or de- structure the object
+const {courseInstructor : instructor} =course
+console.log(instructor);
