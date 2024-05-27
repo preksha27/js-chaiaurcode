@@ -39,3 +39,26 @@ function loginUserMessage(username ){    // we can give username as default so t
 
 //console.log(loginUserMessage("Preksha"));// if it is called without passing any arguement then it returns UNDEFINED
 console.log(loginUserMessage("preksha"));
+
+
+function calculateCartPrice(...num1){  // ...num1 is a rest operator  or spread operator -> it collects the no of arguments passed and gives the output as array
+    return num1
+}
+console.log(calculateCartPrice(200,300,400))
+
+const user = {
+    userNAME: "prekhsa",
+    price :199
+
+}
+function handleObject(anyObject){
+    console.log(`${anyObject.userNAME} is username and price is ${anyObject.price}` )
+}
+handleObject(user)// here objects can also be passed, handleObject({})
+// send array as parameters
+ 
+const myNewArray = [200,400,500,1000]
+ function handleArray(array){
+    return array[2]
+ }
+ console.log(handleArray(myNewArray));
