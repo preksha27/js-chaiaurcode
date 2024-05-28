@@ -7,3 +7,20 @@ if(true){ // everything which is written inside a block is called BLOCK scope
 }
 // var can be declared anywhere, but let and const can be accessed outside of the scope
 console.log(c)
+
+//nested scope
+function one(){
+    const username = "hitesh"
+ function two(){
+    const website = "youtube"
+    console.log(username);
+ }
+ //console.log(website)
+ two()
+}
+one()
+
+
+
+
+
