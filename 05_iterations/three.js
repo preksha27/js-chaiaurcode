@@ -1,10 +1,10 @@
-// for of(array specific loops)
+// for of(array specific loops) // used for arraysssss
 ["",""]//strings insidearray
 [{},{}] // objects inside array
 
 const arrrr=[1,2,3,4,5]
 
-for (const num of arrrr) {
+for (const num of arrrr) {  
     console.log(num);
 }
 
