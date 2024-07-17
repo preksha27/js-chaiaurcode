@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM | Chai aur code</title>
+</head>
+<body style="background-color: black;color: white;">
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+//how to add elements:
+// 1.create element using document.create('x')
+//add the content which need to added x.innerHTML = '${}'
+//select the class/id to which the new element is needed to be added document.queryselector('.class/#id')
+//then append the newly added element using .appendChild(x)
+//then run the function by passing the arugements
+    function addLanguage(langName){
+
+       const li = document.createElement('li');
+       li.innerHTML= langName
+       document.querySelector('.language').
+       appendChild(li)
+
+
+    }
+    addLanguage("python")
+    addLanguage("JS")
+
+//the above function adds the list after traversing the existing list which is not the optimised way
+function addOptiLanguage(langName){
+    const li = document.createElement('li');
+    li.appendChild(document.createTextNode(langName))
+    document.querySelector('.language').appendChild(li)
+}
+addOptiLanguage('golang')
+
+// edit
+
+const secondLang = document.querySelector('li:nth-child(2)')//selects 2nd list
+const newli=document.createElement('li')
+newli.textContent= "mojo"
+secondLang.replaceWith(newli)
+//edit2
+
+const first = document.querySelector('li:nth-child(1)')
+first.outerHTML='<li> Typescript </li>'
+
+//remove
+
+const last = document.querySelector('li:last-child')
+last.remove()
+</script>
+</html>

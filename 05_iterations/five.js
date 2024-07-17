@@ -1,4 +1,5 @@
 const coding = ["js","ruby","java","python","cpp"]
+// for each is also used for array
 
 // coding.forEach( function(item) {
 //     console.log(item);
@@ -13,6 +14,8 @@ const coding = ["js","ruby","java","python","cpp"]
 // }
 // coding.forEach(printMe)
 
+
+// for each=> for objects inside array
 coding.forEach( (item,index,arr) => {
     console.log(item,index,arr)
 })

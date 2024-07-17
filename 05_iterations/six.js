@@ -6,19 +6,26 @@
 
 // })
 
-const myNums = [1,2,3,4,5,6,7,8,9,10]
+const myNums = [0]
 // // if {} scope is taken then return should be used
 // const newNums = myNums.filter( (num) => num > 5)
 // console.log(newNums);
 
-// const newNums = []
-// myNums.forEach((num)=> {
-//     if(num > 4){
-//         newNums.push(num)
+//  const newNums = []
+//  myNums.forEach((num)=> {
+//      if(num >= 0 && num <=25){
+//        newNums.push(num)
 //     }
-// })
-
-// console.log(newNums)
+//  })
+//  console.log(newNums)
+const newNums = []
+myNums.forEach((num)=> {
+    for (let i = 0; i <=25; i++) {
+      newNums.push(i)
+      
+    }
+    })
+    console.log(newNums)
 
 const books = [
     { title: 'Book One', genre: 'Fiction', publish: 1981, edition: 2004 },

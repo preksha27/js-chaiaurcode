@@ -1,4 +1,5 @@
 const myNums = [1,2,3]
+// helps is shopping cart
 
 // const myTotal = myNums.reduce((acc,currval)=>{
 //     console.log(`acc: ${acc} and current value: ${currval}`);
